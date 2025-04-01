@@ -37,23 +37,6 @@ projects.map((proj) =>{
 })
 document.querySelector('.grid-projects').innerHTML = projectSection;
 
-//   init() {
-//     if (!this.typewriterEl) return;
-
-//     // Set up Intersection Observer
-//     this.observer = new IntersectionObserver((entries) => {
-//       entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//           this.startAnimation();
-//           this.observer.unobserve(this.typewriterEl);
-//         }
-//       });
-//     }, { threshold: 0.5 });
-
-//     this.observer.observe(this.typewriterEl);
-//   }
-
-
 const text = "Trumptomz.";
 const typewriterEl = document.querySelector(".typewriter");
 let i = 0;
