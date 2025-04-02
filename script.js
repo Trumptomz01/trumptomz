@@ -48,10 +48,10 @@ function type() {
   typewriterEl.textContent = currentText;
   if (isDeleting && i === 0) {
     isDeleting = false;
-    setTimeout(type, 600); // Pause before retyping
+    setTimeout(type, 600); 
   } else {
     i += isDeleting ? -1 : 1;
-    setTimeout(type, 105); // Speed
+    setTimeout(type, 105);
   }
 }
 
