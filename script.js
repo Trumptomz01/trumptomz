@@ -16,8 +16,8 @@ projects = [
       image:"/public/testi.png"
    }
 ]
-let projectSection= "";
 
+let projectSection= "";
 projects.map((proj) =>{
    return projectSection += `
       <div>
@@ -28,11 +28,11 @@ projects.map((proj) =>{
                ${proj.shortDescription}
             </p>
             <div class="project-links">
-            <a target="_blank" title="Live link" href="${proj.liveLink}"><i class="fa-solid fa-link"></i></a>
-            <a target="_blank" title="github Link" href="${proj.githubLink}"><i class="fa-brands fa-square-github"></i></a>
+               <a target="_blank" title="Live link" href="${proj.liveLink}"><i class="fa-solid fa-link"></i></a>
+               <a target="_blank" title="github Link" href="${proj.githubLink}"><i class="fa-brands fa-square-github"></i></a>
             </div>
          </div>
-      </div> 
+      </div>
    `
 })
 document.querySelector('.grid-projects').innerHTML = projectSection;
@@ -74,7 +74,7 @@ window.addEventListener('resize', () => {
      mobileNav.classList.remove('show');
      document.body.classList.remove('no-scroll');
    }
- });
+});
 
  document.addEventListener('click', (e) => {
    if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
@@ -82,4 +82,17 @@ window.addEventListener('resize', () => {
      mobileNav.classList.remove('show');
      document.body.classList.remove('no-scroll');
    }
+});
+document.addEventListener('DOMContentLoaded', () => {
+   const sections = document.querySelectorAll('.section-animate');
+   
+   const observer = new IntersectionObserver((entries) => {
+     entries.forEach(entry => {
+       if (entry.isIntersecting) {
+         entry.target.classList.add('animate');
+       }
+     });
+   }, { threshold: 0.6 });
+ 
+   sections.forEach(section => observer.observe(section));
  });
