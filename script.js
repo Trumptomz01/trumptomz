@@ -5,7 +5,7 @@ projects = [
       shortDescription:"T-TECH AUTOS is a car rental showcase featuring brands like Toyota, Lexus, and Lamborghini, catering to business, luxury, and adventure needs.",
       githubLink:"https://github.com/Trumptomz01/ttech-rentals",
       liveLink:"https://ttech-rentals.vercel.app/",
-      image:"/public/t-techRentals.png"
+      image:"/t-techRentals.png"
    },
    {
       id: 3,
@@ -13,7 +13,7 @@ projects = [
       shortDescription:"A hands-on tutorial or demo website teaching modern CSS Grid techniques, featuring interactive examples to help users master responsive web layouts.",
       githubLink:"https://github.com/Trumptomz01/",
       liveLink:"https://grid-tutorial-ujqm.vercel.app/",
-      image:"/public/testi.png"
+      image:"/testi.png"
    }
 ]
 
