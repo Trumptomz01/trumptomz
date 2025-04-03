@@ -57,6 +57,9 @@ body{
 .hamburger-menu.active .line:nth-child(3) {
    transform: rotate(-45deg) translate(2px, 3px);
 }
+.mobile-nav a{
+   padding: 5px;
+}
 @media (max-width: 770px) {
    .hamburger-menu {
      display: flex;
