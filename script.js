@@ -12,7 +12,7 @@ projects = [
       title:"Company Testimonials",
       shortDescription:"A hands-on tutorial or demo website teaching modern CSS Grid techniques, featuring interactive examples to help users master responsive web layouts.",
       githubLink:"https://github.com/Trumptomz01/",
-      liveLink:"https://grid-tutorial-ujqm.vercel.app/",
+      liveLink:"https://grid-tutorial.vercel.app/",
       image:"/testi.png"
    }
 ]
