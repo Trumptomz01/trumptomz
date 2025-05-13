@@ -252,7 +252,6 @@ section .hero-float-img{
 }
 .hero-img{
    transform: translateY(0);
-   animation: float 3s ease-in-out infinite;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .hero-img:hover{
@@ -304,16 +303,16 @@ button{
    border-bottom: 1px solid #000;
 }
 .my-work:hover{
-   .fa-arrow-right{
-      transform: translateX(5px);
-      transition: all 0.3s  ease-in-out;
-
-   }
    text-decoration: none;
    transition: all 0.3s ease-in-out;
    color: #000;
    border: none;
    transform: translateY(-5px);
+   .fa-arrow-right{
+      transform: translateX(5px);
+      transition: all 0.3s  ease-in-out;
+
+   }
 }
 .fa-arrow-right{
    margin-bottom: 1px;
@@ -350,7 +349,7 @@ button{
    display: flex;
    flex-wrap: wrap;
    font-size: 14px;
-   gap: 20px;
+   gap: 60px;
    margin: 100px 0;
 }
 
@@ -436,7 +435,6 @@ h3{
 .about-me-content{
    width: 100%;
    display: flex;
-   /* border: 1px solid red; */
    margin: 5px auto;
 }
 .aboutSec{
@@ -475,8 +473,8 @@ h3{
 }
 .about-me p{
    font-family: "poppins", sans-serif;
-   font-weight: 500;
-   color: #3f3f3f;
+   font-weight: 400;
+   color: #545353;
    margin:10px 0;
    font-size: 16px;
 }
@@ -805,10 +803,6 @@ hr{
 @keyframes fadeInRightImg {
    from {opacity: 0; transform: translateX(50px);}
    to {opacity: 1; transform: translateX(0);}
-}
-@keyframes float {
-   0%, 100% {transform: translateY(0);}
-   50% {transform: translateY(-20px);}
 }
 @media (prefers-reduced-motion: reduce) {
    .hero-float-img {animation: fadeInRight 0.8s ease-out forwards;}

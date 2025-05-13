@@ -5,15 +5,23 @@ projects = [
       shortDescription:"T-TECH AUTOS is a car rental showcase featuring brands like Toyota, Lexus, and Lamborghini, catering to business, luxury, and adventure needs.",
       githubLink:"https://github.com/Trumptomz01/ttech-rentals",
       liveLink:"https://ttech-rentals.vercel.app/",
-      image:"/t-techRentals.png"
+      image:"assets/t-techRentals.png"
    },
    {
-      id: 3,
+      id: 2,
       title:"Company Testimonials",
       shortDescription:"A hands-on tutorial or demo website teaching modern CSS Grid techniques, featuring interactive examples to help users master responsive web layouts.",
       githubLink:"https://github.com/Trumptomz01/",
       liveLink:"https://grid-tutorial.vercel.app/",
-      image:"/testi.png"
+      image:"assets/testi.png"
+   },
+   {
+      id: 3,
+      title:"Playful Color website",
+      shortDescription:"Play with Colors is a web application that allows users to generate colors and view their corresponding hex, RGB, and HSL values. It is a fun tool for anyone looking to experiment with colors and create design projects.",
+      githubLink:"https://github.com/Trumptomz01/play-with-colors",
+      liveLink:"https://play-with-colors.vercel.app/",
+      image:"assets/colorweb.png"
    }
 ]
 
@@ -59,15 +67,15 @@ type();
 
 const hamburger = document.querySelector('.hamburger-menu');
 const mobileNav = document.querySelector('.mobile-nav');
+const body = document.body;
 function toggleMenu() {
    hamburger.classList.toggle('active');
    mobileNav.classList.toggle('show');
-   
    document.body.classList.toggle('no-scroll', mobileNav.classList.contains('show'));
+
 }
-// toggleMenu();
- 
 hamburger.addEventListener('click', toggleMenu);
+
 window.addEventListener('resize', () => {
    if (window.innerWidth > 768) {
      hamburger.classList.remove('active');
